@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User Booking Page</title>
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<link rel="stylesheet" type="text/css" href="./css/fonts/css-fonts/solid.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/fonts/css-fonts/brands.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/fonts/css-fonts/regular.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/fontawesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+</head>
+<body>
+	        <section>
+            <!-- FIRST-SPEC -->
+            <div class="sc-kTUwUJ dmMRtR">
+                <div class="sc-fYxtnH cPxaEJ">
+                    <div class="sc-tilXH ipziHM">
+                        <span class="sc-hEsumM jsiyYo"></span>
+                        <span class="sc-ktHwxA ibNUjc">number of Buses Found</span>
+                        <span class="sc-cIShpX bqfUsD"><span class="sc-kafWEX dTxOVG sc-ckVGcZ bKzFsi">&nbsp;</span>High Rating, Good Timing, Great Amenities</span>
+                    </div>
+                </div>
+                <div class="sc-kTUwUJ dmMRtR">
+                    <div class="sc-dnqmqq bDsesi">
+                        <div class="BusViewContainer">
+                            <div class="sc-iwsKbI gTUxim slct-srcBox">
+                                <div class="sc-gZMcBi gkRcqz">
+                                    <span data-placeholder="true" class="sc-gqjmRU izTLmu">22:45&nbsp;</span>
+                                    <span data-placeholder="true" class="sc-jzJRlG btSGRi"> 8h</span>
+                                    <span data-placeholder="true" class="sc-fjdhpX laKnSQ">06:45&nbsp;</span>
+                                </div>
+                                <div class="sc-cSHVUG kBaSPa">
+                                    <p data-placeholder="true" class="sc-kAzzGY eVnWFt"><span class="sc-chPdSV bs-trvls" title="Ritco Travels Ltd">Ritco Travels Ltd/</span><span class="sc-kgoBCf cQRYis">A/C Sleeper (2+1)</span> </p>
+                                    <ul class="sc-kGXeez sOzzB">
+                                        <ul class="sc-kpOJdX bFqegh">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ htLomb"></span> 3 Window Seats
+                                        </ul>
+                                        <ul class="sc-kpOJdX bFqegh">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ jgggCR"></span> 1 Rest Stop
+                                        </ul>
+                                    </ul>
+                                    <ul class="sc-eNQAEJ bFIowg">
+                                        <p class="sc-kkGfuU dfuvAZ"><span class="sc-iAyFgw krClWy" high="true"><span class="sc-hSdWYo eXbDWv">4.1</span>/5</span> </p>
+                                        <li class="sc-hMqMXs kEmCaG">Policies</li>
+                                        <li class="sc-hMqMXs kEmCaG">Pickups &amp; Drops</li>
+                                        <ul class="sc-kGXeez sOzzB"></ul>
+                                    </ul>
+                                </div>
+                                <div class="sc-eHgmQL qdAhs">
+                                    <div>
+                                        <span data-placeholder="true" class="sc-brqgnP bKUXLW">896</span>
+                                    </div>
+                                    <ul class="sc-kGXeez sOzzB">
+                                        <ul class="sc-dxgOiQ BhRgU">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ crLZrM"></span> number of Seats Left
+                                        </ul>
+                                        <!-- TODO: add an event listener onclick to show the search results.. -->
+                                    </ul>
+                                    <a class="sc-cMljjf drsecP">Select Seats</a>
+                                    <!-- DATA to be shown after user clicks the search button
+                                    TODO: radium data popped off of user being be able to select or book seats -->
+                                    <div style="animation: 0.3s ease 0s 1 normal none running fadeIn-radium-animation-435b92e5;" data-radium="true">
+                                        <div class="sc-gzVnrw jKdxIN">
+                                            <div class="pickupDropConcessionPointContent noShrink ">
+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="animation: 0.3s ease 0s 1 normal none running fadeIn-radium-animation-435b92e5;" data-radium="true">
+                                <!-- TODO: manipulate this content in js to pop-down after user clicks the [select seat] button -->
+                                <!-- hidden by default until user clicks [select seat] -->
+                                <div class="detailsPopup makeRelative colorWhiteSmoke" data-radium="true">
+                                    <span class="upArrow pickndrop">&nbsp;</span>
+                                    <a class="btnClose latoBold font12 deepskyBlueText" href="javascript:void(0);">Close</a>
+                                    <div class="makeFlex" data-radium="true">
+                                        <!-- TODO: pickup and drop points where user is able to select one of them -->
+                                        <div class="sc-gzVnrw jKdxIN">
+                                            <div class="pickupDropConcessionPointContent noShrink ">
+                                                <div class="pickupPoint animateWidth ">
+                                                    <p class="font22 darkGreyText appendBottom20">Select Pickup Point</p>
+                                                    <ul class="btnSelectBus">
+                                                        <li class="selected makeFlex spaceBetween sc-EHOje eQYihx">
+                                                            <span class="latoRegular makeFlex font12 column"> <span class="font14 latoBold blackText appendBottom5"> <span class="font16">22:45</span> </span> <span class="latoBold appendBottom5 blackText">corridor I:Kigali-Kigali-KicukiroNyanza</span> <span class="font12 darkGreyText">Gishushu, Remera, Kabeza, Kicukiro</span> </span>
+                                                            <span class="checkBox noShrink active"></span>
+                                                        </li>
+                                                        <li class="sc-EHOje eQYihx">
+                                                            <span class="latoRegular makeFlex font12 column"> <span class="font14 latoBold blackText appendBottom5"> <span class="font16">23:00</span> </span> <span class="latoBold appendBottom5 blackText">corridor II: Kigali-Kayonza-Nyagatare</span> <span class="font12 darkGreyText"> Kabarore, Ryabega, Karangazi </span> </span>
+                                                            <span class=""></span>
+                                                        </li>
+                                                        <li class="sc-EHOje eQYihx">
+                                                            <span class="latoRegular makeFlex font12 column"> <span class="font14 latoBold blackText appendBottom5"> <span class="font16">23:30</span> </span> <span class="latoBold appendBottom5 blackText">corridor II: Kigali-Muhanga-Huye-Rubavu</span> <span class="font12 darkGreyText">Nyanza, Nyamagabe, Nyaruguru, Gisagara</span> </span>
+                                                            <span class=""></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="pickupDropConcessionPointContent noShrink ">
+                                                <div class="dropPoint animateWidth ">
+                                                    <p class="font22 darkGreyText appendBottom20">Select Drop Point</p>
+                                                    <ul class="btnSelectBus">
+                                                        <li class="selected makeFlex spaceBetween sc-EHOje eQYihx">
+                                                            <span class="latoRegular makeFlex font12 column"> <span class="font14 latoBold blackText appendBottom5"> <span class="font16">06:45</span> </span> <span class="latoBold appendBottom5 blackText">corridor IV: Kigali-Gicumbi</span> <span class="font12 darkGreyText"> Kivuye, Rushaki Market, Gatuna Border Post</span> </span>
+                                                            <span class="checkBox noShrink active"></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-grid-bus bus">
+                                            <!-- DRIVER-SEAT-SECTION-->
+                                            <div class="driver-seat nested-grid-driver">
+                                                <img src="./images/car-steering-wheel.png" class="driver-wheel" width="50px" height="50px">
+                                            </div>
+                                            <!--SEAT1-SECTION-->
+                                            <div class="side1-seats nested-grid-seats-1">
+                                                <span class="seat-1 seat seat-1p">1</span>
+                                                <span class="seat-2 seat seat-1p">2</span>
+                                                <span class="seat-3 seat seat-1p">3</span>
+                                                <span class="seat-4 seat seat-1p">4</span>
+                                                <span class="seat-5 seat seat-1p">5</span>
+                                                <span class="seat-6 seat seat-1p">6</span>
+                                                <span class="seat-7 seat seat-1p">7</span>
+                                            </div>
+                                            <!--SEAT2-SECTION-->
+                                            <div class="side2-seats nested-grid-seats-2">
+                                                <span class="seat-8 seat seat-3p">8</span>
+                                                <span class="seat-9 seat seat-3p">9</span>
+                                                <span class="seat-10 seat seat-3p">10</span>
+                                                <span class="seat-11 seat seat-3p">11</span>
+                                                <span class="seat-12 seat seat-3p">12</span>
+                                                <span class="seat-13 seat seat-3p">13</span>
+                                                <span class="seat-14 seat seat-3p">14</span>
+                                                <span class="seat-15 seat seat-3p">15</span>
+                                                <span class="seat-16 seat seat-3p">16</span>
+                                                <span class="seat-17 seat seat-3p">17</span>
+                                                <span class="seat-18 seat seat-3p">18</span>
+                                                <span class="seat-19 seat seat-3p">19</span>
+                                                <span class="seat-20 seat seat-3p">20</span>
+                                                <span class="seat-21 seat seat-3p">21</span>
+                                                <span class="seat-22 seat seat-3p">22</span>
+                                                <span class="seat-23 seat seat-3p">23</span>
+                                                <span class="seat-24 seat seat-3p">24</span>
+                                                <span class="seat-25 seat seat-3p">25</span>
+                                                <span class="seat-26 seat seat-3p">26</span>
+                                                <span class="seat-27 seat seat-3p">27</span>
+                                                <span class="seat-28 seat seat-3p">28</span>
+                                            </div>
+                                        </div>
+                                        <ul class="toRight">
+                                            <li>
+                                                <span class="booked-grey outline-border"></span>
+                                                <small>booked</small>
+                                            </li>
+                                            <li>
+                                                <span class="available-outlined-blue outline-border"></span>
+                                                <small>available</small>
+                                            </li>
+                                            <li>
+                                                <span class="ladies-outlined-red outline-border"></span>
+                                                <small>ladies</small>
+                                            </li>
+                                            <li>
+                                                <button class="bkst-btn">book seat</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <style>@keyframes fadeIn-radium-animation-435b92e5 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}</style>
+                        </div>
+                    </div>
+                    <!-- SECOND-SPEC -->
+                    <div class="sc-dnqmqq bDsesi">
+                        <div class="BusViewContainer">
+                            <div class="sc-iwsKbI gTUxim slct-srcBox">
+                                <div class="sc-gZMcBi gkRcqz">
+                                    <span data-placeholder="true" class="sc-gqjmRU izTLmu">22:00&nbsp;</span>
+                                    <span data-placeholder="true" class="sc-jzJRlG btSGRi"> 7h 30m</span>
+                                    <span data-placeholder="true" class="sc-fjdhpX laKnSQ">05:30&nbsp;</span>
+                                </div>
+                                <div class="sc-cSHVUG kBaSPa">
+                                    <p data-placeholder="true" class="sc-kAzzGY eVnWFt"><span class="sc-chPdSV bs-trvls" title="Regional Travels Ltd">Regional Travels Ltd</span><span class="sc-kgoBCf cQRYis">A/C Sleeper (2+1)</span> </p>
+                                    <ul class="sc-kGXeez sOzzB">
+                                        <ul class="sc-kpOJdX bFqegh">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ htLomb"></span> 19 Window Seats
+                                        </ul>
+                                        <ul class="sc-kpOJdX bFqegh">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ gJkNoe"></span> Track My Bus
+                                        </ul>
+                                    </ul>
+                                    <ul class="sc-eNQAEJ bFIowg">
+                                        <p class="sc-kkGfuU dfuvAZ"><span class="sc-iAyFgw krClWy" high="true"><span class="sc-hSdWYo eXbDWv">3.8</span>/5</span> </p>
+                                        <li class="sc-hMqMXs kEmCaG">Policies</li>
+                                        <li class="sc-hMqMXs kEmCaG">Pickups &amp; Drops</li>
+                                        <li class="sc-hMqMXs kEmCaG">7 Photos</li>
+                                        <ul class="sc-kGXeez sOzzB">
+                                            <span class="sc-ckVGcZ ftDFPE" title="Water Bottle"></span>
+                                            <span class="sc-ckVGcZ cEaZzx" title="Blankets"></span>
+                                            <li class="sc-hMqMXs kEmCaG">+1 Amenities</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div class="sc-eHgmQL qdAhs">
+                                    <div>
+                                        <span data-placeholder="true" class="sc-brqgnP bKUXLW">800</span>
+                                    </div>
+                                    <ul class="sc-kGXeez sOzzB">
+                                        <ul class="sc-dxgOiQ BhRgU">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ crLZrM"></span> number of Seats Left
+                                        </ul>
+                                    </ul>
+                                    <a class="sc-cMljjf slct-seat-btn drsecP">Select Seats</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- THIRD-SPEC -->
+                    <div class="sc-dnqmqq bDsesi">
+                        <div class="BusViewContainer">
+                            <div class="sc-iwsKbI gTUxim slct-srcBox">
+                                <div class="sc-gZMcBi gkRcqz">
+                                    <span data-placeholder="true" class="sc-gqjmRU izTLmu">22:30&nbsp;</span>
+                                    <span data-placeholder="true" class="sc-jzJRlG btSGRi"> 8h</span>
+                                    <span data-placeholder="true" class="sc-fjdhpX laKnSQ">06:30&nbsp;</span>
+                                </div>
+                                <div class="sc-cSHVUG kBaSPa">
+                                    <p data-placeholder="true" class="sc-kAzzGY eVnWFt"><span class="sc-chPdSV bs-trvls" title="Tourism Bus Travels Ltd">Tourism Bus Travels Ltd/</span><span class="sc-kgoBCf cQRYis">A/C Sleeper (2+1)</span> </p>
+                                    <ul class="sc-kGXeez sOzzB">
+                                        <ul class="sc-kpOJdX bFqegh">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ htLomb"></span> 8 Window Seats
+                                        </ul>
+                                        <ul class="sc-kpOJdX bFqegh">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ gJkNoe"></span> Track My Bus
+                                        </ul>
+                                        <ul class="sc-kpOJdX bFqegh">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ jgggCR"></span> 1 Rest Stop
+                                        </ul>
+                                        <ul class="sc-kpOJdX bFqegh">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ gSgWxg"></span> On Time Guarantee
+                                        </ul>
+                                    </ul>
+                                    <ul class="sc-eNQAEJ bFIowg">
+                                        <p class="sc-kkGfuU dfuvAZ"><span class="sc-iAyFgw krClWy" high="true"><span class="sc-hSdWYo eXbDWv">3.8</span>/5</span> </p>
+                                        <li class="sc-hMqMXs kEmCaG">Policies</li>
+                                        <li class="sc-hMqMXs kEmCaG">Pickups &amp; Drops</li>
+                                        <ul class="sc-kGXeez sOzzB">
+                                            <span class="sc-ckVGcZ dfgCNI" title="Emergency Contact Number"></span>
+                                            <span class="sc-ckVGcZ ftDFPE" title="Water Bottle"></span>
+                                            <li class="sc-hMqMXs kEmCaG">+6 Amenities</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div class="sc-eHgmQL qdAhs">
+                                    <div>
+                                        <div>
+                                            <span data-placeholder="true" class="sc-brqgnP bKUXLW">852</span>
+                                        </div>
+                                        <p class="sc-csuQGl dKyclB"><span class="sc-Rmtcm gnTLhn sc-ckVGcZ rWDNu"></span><span class="sc-bRBYWo gOhQJA">Get 5.0 % Extra OFF</span> </p>
+                                    </div>
+                                    <ul class="sc-kGXeez sOzzB">
+                                        <ul class="sc-dxgOiQ BhRgU">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ crLZrM"></span> number of Seats Left
+                                        </ul>
+                                    </ul>
+                                    <a class="sc-cMljjf slct-seat-btn drsecP">Select Seats</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FOURTH-SPEC -->
+                    <div class="sc-dnqmqq bDsesi">
+                        <div class="BusViewContainer">
+                            <div class="sc-iwsKbI gTUxim slct-srcBox">
+                                <div class="sc-gZMcBi gkRcqz">
+                                    <span data-placeholder="true" class="sc-gqjmRU izTLmu">21:30&nbsp;</span>
+                                    <span data-placeholder="true" class="sc-jzJRlG btSGRi"> 8h</span>
+                                    <span data-placeholder="true" class="sc-fjdhpX laKnSQ">05:30&nbsp;</span>
+                                </div>
+                                <div class="sc-cSHVUG kBaSPa">
+                                    <p data-placeholder="true" class="sc-kAzzGY eVnWFt"><span class="sc-chPdSV bs-trvls" title="International Travel buses">International Travel buses /</span><span class="sc-kgoBCf cQRYis">A/C Sleeper (2+1)</span> </p>
+                                    <ul class="sc-kGXeez sOzzB">
+                                        <ul class="sc-kpOJdX bFqegh">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ htLomb"></span> 18 Window Seats
+                                        </ul>
+                                        <ul class="sc-kpOJdX bFqegh">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ jgggCR"></span> 1 Rest Stop
+                                        </ul>
+                                    </ul>
+                                    <ul class="sc-eNQAEJ bFIowg">
+                                        <p class="sc-kkGfuU dfuvAZ"><span class="sc-iAyFgw krClWy" high="true"><span class="sc-hSdWYo eXbDWv">3.8</span>/5</span> </p>
+                                        <li class="sc-hMqMXs kEmCaG">Policies</li>
+                                        <li class="sc-hMqMXs kEmCaG">Pickups &amp; Drops</li>
+                                        <ul class="sc-kGXeez sOzzB">
+                                            <span class="sc-ckVGcZ dwyFni" title="On-Time Guarantee"></span>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div class="sc-eHgmQL qdAhs">
+                                    <div>
+                                        <div>
+                                            <span class="sc-jWBwVP gozbWD">896</span>
+                                            <span data-placeholder="true" class="sc-brqgnP bKUXLW">852</span>
+                                        </div>
+                                        <p class="sc-csuQGl dKyclB"><span class="sc-Rmtcm gnTLhn sc-ckVGcZ rWDNu"></span><span class="sc-bRBYWo gOhQJA">Get 5.0 % Extra OFF</span> </p>
+                                    </div>
+                                    <ul class="sc-kGXeez sOzzB">
+                                        <ul class="sc-dxgOiQ BhRgU">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ crLZrM"></span> number of Seats Left
+                                        </ul>
+                                    </ul>
+                                    <a class="sc-cMljjf slct-seat-btn drsecP">Select Seats</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIFTH-SPEC -->
+                    <div class="sc-dnqmqq bDsesi">
+                        <div class="BusViewContainer">
+                            <div class="sc-iwsKbI gTUxim slct-srcBox">
+                                <div class="sc-gZMcBi gkRcqz">
+                                    <span data-placeholder="true" class="sc-gqjmRU izTLmu">21:00&nbsp;</span>
+                                    <span data-placeholder="true" class="sc-jzJRlG btSGRi"> 9h 0m</span>
+                                    <span data-placeholder="true" class="sc-fjdhpX laKnSQ">06:06&nbsp;</span>
+                                </div>
+                                <div class="sc-cSHVUG kBaSPa">
+                                    <p data-placeholder="true" class="sc-kAzzGY eVnWFt"><span class="sc-chPdSV bs-trvls" title="Kigali Urban Travels">Kigali Urban Travels /</span><span class="sc-kgoBCf cQRYis">A/C Seater / Sleeper (2+1)</span> </p>
+                                    <ul class="sc-kGXeez sOzzB">
+                                        <ul class="sc-kpOJdX bFqegh">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ htLomb"></span> 27 Window Seats
+                                        </ul>
+                                        <ul class="sc-kpOJdX bFqegh">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ jgggCR"></span> 1 Rest Stop
+                                        </ul>
+                                    </ul>
+                                    <ul class="sc-eNQAEJ bFIowg">
+                                        <p class="sc-kkGfuU dfuvAZ"><span class="sc-iAyFgw krClWy" high="true"><span class="sc-hSdWYo eXbDWv">3.7</span>/5</span> </p>
+                                        <li class="sc-hMqMXs kEmCaG">Policies</li>
+                                        <li class="sc-hMqMXs kEmCaG">Pickups &amp; Drops</li>
+                                        <li class="sc-hMqMXs kEmCaG">2 Photos</li>
+                                        <ul class="sc-kGXeez sOzzB">
+                                            <span class="sc-ckVGcZ dfgCNI" title="Emergency Contact Number"></span>
+                                            <span class="sc-ckVGcZ ftDFPE" title="Water Bottle"></span>
+                                            <li class="sc-hMqMXs kEmCaG">+7 Amenities</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div class="sc-eHgmQL qdAhs">
+                                    <div>
+                                        <span data-placeholder="true" class="sc-brqgnP bKUXLW">549</span>
+                                    </div>
+                                    <ul class="sc-kGXeez sOzzB">
+                                        <ul class="sc-dxgOiQ BhRgU">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ crLZrM"></span> number of Seats Left
+                                        </ul>
+                                    </ul>
+                                    <a class="sc-cMljjf slct-seat-btn drsecP">Select Seats</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sc-dnqmqq bDsesi">
+                        <div class="BusViewContainer">
+                            <div class="sc-iwsKbI gTUxim slct-srcBox">
+                                <div class="sc-gZMcBi gkRcqz">
+                                    <span data-placeholder="true" class="sc-gqjmRU izTLmu">21:30&nbsp;</span>
+                                    <span data-placeholder="true" class="sc-jzJRlG btSGRi"> 8h</span>
+                                    <span data-placeholder="true" class="sc-fjdhpX laKnSQ">05:30&nbsp;</span>
+                                </div>
+                                <div class="sc-cSHVUG kBaSPa">
+                                    <p data-placeholder="true" class="sc-kAzzGY eVnWFt"><span class="sc-chPdSV bs-trvls" title="Normal bus Travels"> Normal bus Travels /</span><span class="sc-kgoBCf cQRYis">A/C Sleeper (2+1)</span> </p>
+                                    <ul class="sc-kGXeez sOzzB">
+                                        <ul class="sc-kpOJdX bFqegh">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ htLomb"></span> 22 Window Seats
+                                        </ul>
+                                        <ul class="sc-kpOJdX bFqegh">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ gJkNoe"></span> Track My Bus
+                                        </ul>
+                                        <ul class="sc-kpOJdX bFqegh">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ jgggCR"></span> 1 Rest Stop
+                                        </ul>
+                                    </ul>
+                                    <ul class="sc-eNQAEJ bFIowg">
+                                        <p class="sc-kkGfuU dfuvAZ"><span class="sc-iAyFgw krClWy" high="true"><span class="sc-hSdWYo eXbDWv">3.7</span>/5</span> </p>
+                                        <li class="sc-hMqMXs kEmCaG">Policies</li>
+                                        <li class="sc-hMqMXs kEmCaG">Pickups &amp; Drops</li>
+                                        <li class="sc-hMqMXs kEmCaG">1 Photos</li>
+                                        <ul class="sc-kGXeez sOzzB">
+                                            <span class="sc-ckVGcZ dfgCNI" title="Emergency Contact Number"></span>
+                                            <span class="sc-ckVGcZ ftDFPE" title="Water Bottle"></span>
+                                            <li class="sc-hMqMXs kEmCaG">+7 Amenities</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div class="sc-eHgmQL qdAhs">
+                                    <div>
+                                        <span data-placeholder="true" class="sc-brqgnP bKUXLW">749</span>
+                                    </div>
+                                    <ul class="sc-kGXeez sOzzB">
+                                        <ul class="sc-dxgOiQ BhRgU">
+                                            <span class="sc-jKJlTe jhvond sc-ckVGcZ crLZrM"></span> number of Seats Left
+                                        </ul>
+                                    </ul>
+                                    <a class="sc-cMljjf slct-seat-btn drsecP">Select Seats</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
+</html>
