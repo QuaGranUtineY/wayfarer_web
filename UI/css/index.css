@@ -333,7 +333,7 @@ h1{
 /*------- TESTIMONIAL-SECTION-styles --------*/
 /*----------------------------------------------*/
 .testimonials-section{
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../css/bg-imgs/bag-packed-travel.jpeg") no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../images/bag-packed-travel.jpeg") no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -424,7 +424,7 @@ cite img{
 /*------- FOOTER-SECTION-styles --------*/
 /*----------------------------------------------*/
 .footer-nav{
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../css/bg-imgs/bus-inside.jpeg') no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../images/bus-inside.jpeg') no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
