@@ -60,7 +60,7 @@ input{
 	background: transparent;
 	color: rgb(191, 205, 212);
 	font-weight: bold;
-	/*border: 1px solid transparent;*/
+	border: 1px solid #155B6A;
 	transition: border 0.2s, box-shadow 0.3s, color 0.3s;
 	box-shadow: 0 3px 6px -6px #155B6A;
 }
