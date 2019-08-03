@@ -48,7 +48,7 @@ h2:after{
 	transform: translate(-50%,-50%);
 	padding: 10px;
 	/*text-align: center;*/
-	box-shadow: 0 5px 15px -6px #333;
+	box-shadow: 0 5px 15px -3px #fff;
 }
 .middle-hero .inp{
 	margin-bottom: 30px;
