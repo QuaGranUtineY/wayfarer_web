@@ -1,0 +1,138 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	background: #fff;
+	color: #555;
+	font-size: 20px;
+	font-family: lato;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+}
+h2{
+    letter-spacing: 1px;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px; 
+    color: #155B6A;
+    text-transform: uppercase;
+}
+h2:after{
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #42B3CE;
+    margin: 0 auto;
+    margin-top: 20px;
+    content: " ";
+}
+ul{
+	list-style: none;
+}
+.row{
+	max-width: 1140px;
+	margin: 0 auto;
+	border: 1px solid none;
+}
+/*---------------------------------------------------------------------*/
+/*--------  TRIPS-SECTION  -------*/
+/*---------------------------------------------------------------------*/
+.trips-res .trip-box{
+	margin-bottom: 40px;
+}
+.trip-box h3{
+	padding: 25px 0;
+} 
+.trip-box h3{
+	text-align: center;
+}
+.trip-box{
+	font-size: 15px;
+	background: #fff;
+	text-transform: uppercase;
+}
+.bx-one,
+.bx-two,
+.bx-three,
+.bx-four{
+	box-shadow: 0 5px 10px -6px #333;
+}
+.bus-img-container img{
+	width: 100%;
+	height: 500px;
+	opacity: 0.45;
+	transform: scale(1);
+	transition: opacity 0.5s, transform 0.5s;
+}
+.bus-img-container img:hover{
+	opacity: 1;
+	transform: scale(1.0);
+}
+.bus-img-container{
+	/*text-align: center;*/
+}
+.bus-token-id{
+	font-weight: bold;
+	color: #155A6B;
+}
+.bus-token-id .toleft{
+	float: left;
+}
+.bus-token-id .toright{
+	float: right;
+}
+.toleft,
+.toright,
+.price{
+	padding: 0 10px;
+	margin: 10px 0;
+}
+.price{
+	clear: both;
+	font-weight: 400;
+}
+#prce{
+	font-weight: bold;
+	color: #155A6B;
+}
+.action-btns{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 8px;
+}
+.action-btns button{
+	margin: 0 10px;
+	border-style: none;
+	outline: none;
+	padding: 15px 25px;
+	text-transform: uppercase;
+	border: 2px solid transparent;
+	background: #155A6B;
+	color: #fff;
+	border-radius: 20px;
+	font-weight: bold;
+	transition: border 0.3s, border-radius 0.2s, background 0.3s, color 0.3s;
+}
+.action-btns button:hover{
+	border: 1px solid #42B3CE;
+	color: #42B3CE;
+	background: transparent;
+    border-radius: 1px;
+}
+.ico-amenity{
+	margin-right: 10px;
+}
+.dollar{
+	padding: 0 5px;
+	color: #155A6B;
+}
+#dbox{
+	background: #42B3CE;
+	padding: 6px;
+	border-radius: 3px;
+	font-weight: bold;
+	color: #fff;
+}
