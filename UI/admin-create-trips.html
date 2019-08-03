@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Administration | Create Trip</title>
+	<link rel="stylesheet" type="text/css" href="./css/admin-create-trips.css">
+	<link rel="stylesheet" type="text/css" href="./css/grid.css">
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./css/fonts/css-fonts/solid.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/fonts/css-fonts/brands.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/fonts/css-fonts/regular.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/fonts/css-fonts/fontawesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+</head>
+<body>
+	            <!-- CREATE-TRIP-FRAME -->
+            <div class="row">
+                <h2>create trip</h2>
+            </div>
+            <div class="enclose">
+            <div class="row select-bus-company-title">
+                <select class="company-name">
+                    <option value="Ritco Travels Ltd" selected="true">Ritco Travels Ltd</option>
+                    <option value="Tourism Travels Ltd">Tourism Travels Ltd</option>
+                    <option value="Regional Travels Ltd">Regional Travels Ltd</option>
+                    <option value="Urban Kigali Travels Ltd">Urban Kigali Travels Ltd</option>
+                    <option value="International Travels Ltd">International Travels Ltd</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2 creator-box">
+                    <div class="bx bus-box">
+                        <h3>choose bus</h3>
+                            <span>Choose bus: </span>
+                        <select class="busname">
+                            <option value="select-bus" selected="true"> --select bus-- </option>
+                            <option value="bus-1">Bus 1</option>
+                            <option value="bus-2">Bus 2</option>
+                            <option value="bus-3">Bus 3</option>
+                            <option value="bus-4">Bus 4</option>
+                        </select>
+                        <div class="assign-price">
+                            <span>Assign price: </span>
+                            <select class="bus-prices">
+                                <option value="price" selected="true"> --select price-- </option>
+                                <option value="600"><i class="fas fa-dollar-sign"></i>600</option>
+                                <option value="700"><i class="fas fa-dollar-sign"></i>700</option>
+                                <option value="800"><i class="fas fa-dollar-sign"></i>800</option>
+                                <option value="1000"><i class="fas fa-dollar-sign"></i>1000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="pick-up-points">
+                        <h3>pick up points</h3>
+                        <div class="select-pick-points">
+                            <div>
+                                <input type="checkbox" name="checkbox" id="checkbox-place">destination place
+                            </div>
+                           <div>
+                                <input type="checkbox" name="checkbox" id="checkbox-place">destination place
+                            </div>
+                            <div>
+                                <input type="checkbox" name="checkbox" id="checkbox-place">destination place
+                            </div>
+                            <div>
+                                <input type="checkbox" name="checkbox" id="checkbox-place">destination place
+                            </div>
+                            <div>
+                                <input type="checkbox" name="checkbox" id="checkbox-place">destination place
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-2 creator-box">
+                <div class="bx driver-box">
+                        <h3>driver</h3>
+                        <span>choose driver: </span>
+                        <select class="driver-choose">
+                            <option value="select-bus" selected="true"> --select bus driver-- </option>
+                            <option value="driver-1">driver 1</option>
+                            <option value="driver-2">driver 2</option>
+                            <option value="driver-3">driver 3</option>
+                            <option value="driver-4">driver 4</option>
+                        </select>
+                        <div class="assign-driver-shift">
+                            <span>choose driver shift: </span>
+                            <select class="shift-hours">
+                                <option value="shifts" selected="true"> --select driver shifts-- </option>
+                                <option value="s-1">6:00 AM</option>
+                                <option value="s-2">8:30 AM</option>
+                                <option value="s-3">10:00 AM</option>
+                                <option value="s-4">6:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="drop-points">
+                    <h3>drop points</h3>
+                        <div class="select-drop-points">
+                            <div>
+                                <input type="checkbox" name="checkbox" id="checkbox-place">destination place
+                            </div>
+                           <div>
+                                <input type="checkbox" name="checkbox" id="checkbox-place">destination place
+                            </div>
+                            <div>
+                                <input type="checkbox" name="checkbox" id="checkbox-place">destination place
+                            </div>
+                            <div>
+                                <input type="checkbox" name="checkbox" id="checkbox-place">destination place
+                            </div>
+                            <div>
+                                <input type="checkbox" name="checkbox" id="checkbox-place">destination place
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="create-trip-btn">create trip</button>
+            </div>
+                </div>
+</body>
+</html>

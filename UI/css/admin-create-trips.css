@@ -1,0 +1,93 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	background: #fff;
+	color: #555;
+	font-size: 20px;
+	font-family: lato;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+}
+.select-bus-company-title{
+	text-align: center;
+	padding-top: 25px;
+}
+.company-name,
+.busname,
+select{
+	border-style: none;
+	background: transparent;
+	color: #333;
+	border: 1px solid #42B3CE;
+	padding: 10px
+}
+.creator-box{
+	padding: 10px;
+	margin: 10px 0;
+}
+.bx {
+	margin: 10px 0;
+	padding: 10px;
+}
+.bx h3{
+	text-align: center;
+	margin-bottom: 25px;
+}
+.bx select{
+	margin: 10px 0;
+	width: 100%;
+	outline: none;
+}
+.bx span{
+	text-transform: capitalize;
+}
+.pick-up-points,
+.drop-points{
+	margin: 15px 0;
+	padding: 10px;
+	text-align: left;
+	border-top: 5px solid #eee;
+	line-height: 40px;
+	padding-top: 20px;
+}
+.pick-up-points > h3,
+.drop-points > h3{
+	margin-bottom: 15px;
+}
+.enclose{
+	text-align: center;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	box-shadow: 0 5px 20px -10px #333;
+}
+.bus-box{
+}
+.create-trip-btn{
+	background: transparent;
+	border: 1px solid #42B3CE;
+	color: #155A6B;
+	font-weight: bold;
+	padding: 10px 30px;
+	margin-top: 20px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	transition: background 0.3s, color 0.3s, border-radius 0.1s;
+}
+.create-trip-btn:hover{
+	background: #155A6B;
+	color: #fff;
+	border-radius: 2px;
+}
+.select-pick-points,
+.select-drop-points,
+#checkbox-place{
+	vertical-align: middle;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+}
