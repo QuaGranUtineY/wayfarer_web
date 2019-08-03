@@ -1,0 +1,508 @@
+/*--------------------------------------------------------------------------------*/
+/*----- PAGE-SETUP -----*/
+/* SITE-COLORS 
+1. backgrounds [#42B3CE]
+2. buttons [#155A6B]
+3. links []
+*/
+/*--------------------------------------------------------------------------------*/
+
+
+/*================================STYLES-SECTION-SEPARATOR===================================================================*/
+/*------------------*/
+/* INITIAL-SETUP  constant style elements */
+/*------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #fff;
+    color: #555;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.999)), url('../css/bg-imgs/road-near-water.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+section{
+    padding: 80px 0;
+}
+.row{
+    width: 1140px;
+    border: 1px solid none;
+    margin: 0 auto;
+}
+h1,h2,h3{
+    text-transform: uppercase;
+}
+h2, h3{
+    color: #155A6B;
+}
+h1{
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+}
+h2{
+    letter-spacing: 1px;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px; 
+}
+h2:after{
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #42B3CE;
+    margin: 0 auto;
+    margin-top: 30px;
+    content: " ";
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    padding: 10px;
+}
+
+
+
+/*================================STYLES-SECTION-SEPARATOR===================================================================*/
+
+/*---------------------------*/
+/*------ LOGIN-SIGNUP-MODAL-CONTENT ------*/
+/*---------------------------*/
+.login-box{
+    display: none;
+    width: 584px;
+    height: 530px;
+    background: #155A6B;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 80px 30px;
+    border-radius: 5px;
+}
+.avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%,-10%);
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box a{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.login-box .todashboard{
+    border-style: none;
+    height: 40px;
+    background: #42B3CE;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    outline: none;
+    transition: color 0.3s;
+}
+.login-box .todashboard:hover
+{
+    cursor: pointer;
+    background: #42B3CE;
+    color: #155A6B;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.login-box a
+{
+    color: #ffffff;
+    font-weight: bold;
+}
+.log{
+    color: rgba(255,255,255);
+    transition: color 0.3s;
+}
+.log:hover,
+.log:active{
+    color: #333;
+}
+
+.modal-login{
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: 50%;
+
+}
+
+.close{
+    color: rgb(238, 238, 238);
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*================================STYLES-SECTION-SEPARATOR===================================================================*/
+
+
+/*----------------------------------------------*/
+/*------- HEADER-styles --------*/
+/*----------------------------------------------*/
+/*-- navigational menu --*/
+.menu-items li,
+.account-logs li{
+    display: inline-block;
+}
+.menu-items,
+.account-logs{
+    float: right;
+}
+.menu-items li a:link,
+.menu-items li a:visited,
+.account-logs li a:link,
+.account-logs li a:visited{
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    font-weight: 400;
+    font-size: 70%;
+    transition: border-bottom 0.3s;
+    text-transform: uppercase;
+    outline: none;
+    padding-bottom: 10px;
+
+}
+.menu-items li a:hover,
+.menu-items li a:active,
+.account-logs li a:hover,
+.account-logs li a:active{
+    border-bottom: 3px solid #42B3CE;
+}
+.menu-items{
+    margin-right: 20%;
+}
+.menu-items li{
+    margin-right: 15px;
+}
+.account-logs li{
+    margin-left: 10px;
+}
+.account-logs li:first-child{
+    border-right: 1px solid #fff;
+    padding-right: 18px;
+    height: 20px;
+    line-height: 18px;
+}
+.hero-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 30px 0;
+}
+/*--- links & buttons ---*/
+.btn-explore:link,
+.btn-explore:visited{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 100px;
+    color: #42B3CE;
+    font-weight: bold;
+    background: none;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+}
+.btn-explore:hover,
+.btn-explore:active{
+    background: #155A6B;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+/*================================STYLES-SECTION-SEPARATOR===================================================================*/
+
+/*----------------------------------------------*/
+/*------- FEATURES-SECTION-styles --------*/
+/*----------------------------------------------*/
+.features-section{
+    background: #f5f8fa;
+}
+.contact-after-hero{
+    /*box-shadow: 0 3px 15px -2px grey;*/
+    float: right;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.ctct{
+    font-size: 100%;
+}
+.ctct .icon{
+    font-size: 100%;
+    margin: 0 5px;
+    display: block;
+    color: #fff;
+    box-shadow: 0 3px 10px -5px grey;
+    /*border: 5px solid #42B3CE;*/
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+.box{
+    text-align: center;
+}
+
+.box p{
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    padding-top: 30px;
+    text-align: center;
+}
+.box i{
+    font-size: 50px;
+    display: inline-block;
+    color: #42B3CE;
+}
+
+
+/*================================STYLES-SECTION-SEPARATOR===================================================================*/
+
+
+/*----------------------------------------------*/
+/*------- TESTIMONIAL-SECTION-styles --------*/
+/*----------------------------------------------*/
+.testimonials-section{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../css/bg-imgs/bag-packed-travel.jpeg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+}
+blockquote{
+    font-weight: 300;
+    font-style: italic;
+    padding: 2%;
+    line-height: 145%;
+    position: relative;
+    margin-top: 50px;
+}
+blockquote:before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    margin-top: 30px;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+}
+cite{
+    display: block;
+    margin-top: 15px;
+}
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+/*================================STYLES-SECTION-SEPARATOR===================================================================*/
+
+/*----------------------------------------------*/
+/*------- TEAM-SECTION-styles --------*/
+/*----------------------------------------------*/
+.team-section{
+    background: #155A6B;
+}
+.team-section h3{
+    color: #555;
+    font-weight: 400;
+}
+.team-section p,
+.team-section h3{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tm-box{
+    background: transparent;
+    text-align: center;
+    padding: 10px;
+}
+.tm-img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+.tm-social{
+    text-align: center;
+    padding-top: 20px;
+}
+.tm-icon{
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.tm-social li{
+    display: inline-block;
+    margin-right: 20px;
+}
+#tm-white{
+    color: #fff;
+}
+
+
+/*================================STYLES-SECTION-SEPARATOR===================================================================*/
+
+
+/*----------------------------------------------*/
+/*------- FOOTER-SECTION-styles --------*/
+/*----------------------------------------------*/
+.footer-nav{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../css/bg-imgs/bus-inside.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 30px 0;
+}
+.ft-box{
+    padding-bottom: 10px;
+    font-weight: 300;
+    color: #555;
+}
+.ft-box h3{
+    border-bottom: 2px solid #155A6B;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.ft-box p{
+    margin-bottom: 20px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+.ft-box i{
+    color: #42B3CE;
+    padding-right: 15px;
+}
+.ft-box div{
+    margin-bottom: 5px;
+}
+.copy{
+    border-top: 1px solid #333;
+}
+.copy p{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.ft-menu-links li{
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+.ft-menu-links li a:link,
+.ft-menu-links li a:visited{
+    color: #555;
+    transition: color 0.3s;
+}
+.ft-menu-links li a:hover,
+.ft-menu-links li a:active{
+    color: #42B3CE;
+}
+.ft-box .nw-routes-links{
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+    margin-bottom: 20px;
+    outline: none;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #333;
+    background: transparent;
+}
+
+input[type=submit]{
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid #42B3CE;
+    padding: 10px 20px;
+    width: 80%;
+    color: #42B3CE;
+    font-weight: bold;
+    transition: color 0.3s, background 0.3s, border 0.3s;
+}
+input[type=submit]:hover{
+    background: #155A6B;
+    color: white;
+    border: 1px solid transparent;
+}
+
