@@ -1,0 +1,126 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	background: #fff;
+	color: #555;
+	font-size: 20px;
+	font-family: lato;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+}
+.login-box{
+    display: block;
+    width: 584px;
+    height: 530px;
+    background: #155A6B;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 80px 30px;
+    border-radius: 5px;
+}
+.avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%,-10%);
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box a{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.login-box .todashboard{
+    border-style: none;
+    height: 40px;
+    background: #42B3CE;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    outline: none;
+    transition: color 0.3s;
+}
+.login-box .todashboard:hover
+{
+    cursor: pointer;
+    background: #42B3CE;
+    color: #155A6B;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.login-box a
+{
+    color: #ffffff;
+    font-weight: bold;
+}
+.log{
+    color: rgba(255,255,255);
+    transition: color 0.3s;
+}
+.log:hover,
+.log:active{
+    color: #333;
+}
+
+.modal-login{
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: 50%;
+
+}
+
+.close{
+    color: rgb(238, 238, 238);
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus{
+    text-decoration: none;
+    cursor: pointer;
+}
