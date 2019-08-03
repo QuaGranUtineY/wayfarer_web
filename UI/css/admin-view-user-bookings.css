@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	background: #fff;
+	color: #555;
+	font-size: 20px;
+	font-family: lato;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+}
+h2{
+    letter-spacing: 1px;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px; 
+    color: #155B6A;
+    text-transform: uppercase;
+}
+h2:after{
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #42B3CE;
+    margin: 0 auto;
+    margin-top: 20px;
+    content: " ";
+}
+ul{
+    list-style: none;
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+    border: 1px solid none;
+}
+/*---------------------------------------------------------------------*/
+/*--------  VIEW-USER-BOOKINGS-SECTION  -------*/
+/*---------------------------------------------------------------------*/
+.company-title-user-book-1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.company-title-user-book-1 button{
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    background: #155A6B;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px -5px #333;
+    color: #fff;
+}
+.nmbr-of-user-in{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 400;
+}
+.nmbr-of-user-in #number-of-users{
+    color: #155A6B;
+    text-transform: uppercase;
+}
+.user-specs{
+    padding: 10px;
+}
+
+#pic-parent img{
+    float: left;
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px -4px #333;
+}
+.specs-right ul{
+    float: right;
+    margin: 15px 0;
+    padding: 10px 0;
+}
+.specs-right ul span{
+    color: #555;
+}
+.specs-right #txtbl{
+    font-weight: 400;
+    color: #155A6B;
+    text-transform: capitalize;
+}
+#txtbl{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #eee;
+}
+
+
