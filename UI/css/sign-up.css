@@ -11,6 +11,13 @@ html{
 	text-rendering: optimizeLegibility;
 	color: #555;
 }
+header{
+	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('http://papers.co/wallpaper/papers.co-vf53-tires-from-top-bw-dark-texture-art-pattern-29-wallpaper.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+}
 h2{
     letter-spacing: 1px;
     font-size: 180%;
@@ -51,16 +58,17 @@ input{
 	padding: 10px;
 	border-style: none;
 	background: transparent;
-	color: #555;
+	color: rgb(191, 205, 212);
 	font-weight: bold;
 	/*border: 1px solid transparent;*/
-	/*transition: border 0.2s, background 0.3s, color 0.3s;*/
-	box-shadow: 0 3px 6px -5px #155B6A;
+	transition: border 0.2s, box-shadow 0.3s, color 0.3s;
+	box-shadow: 0 3px 6px -6px #155B6A;
 }
 input:hover{
-	color: #155B6A;
-	/*border: 1px solid #155B6A;*/
-	background: transparent;
+	color: #42B3CE;
+	background: transparent;	
+	box-shadow: 0 5px 10px -2px #155B6A;
+
 }
 .btn{
 	text-align: center;
@@ -70,7 +78,7 @@ form{
 }
 input[type=submit]{
 	width: 50%;
-	color: #555;
+	color: #42B3CE;
 	background: transparent;
 	box-shadow: 0 3px 10px -4px #155B6A;
 	border-radius: 20px;
@@ -78,7 +86,10 @@ input[type=submit]{
 	transition: color 0.3s,background 0.3s, transform 0.5s;
 }
 input[type=submit]:hover{
-	background: #155B6A;
+	background: url('http://papers.co/wallpaper/papers.co-vf53-tires-from-top-bw-dark-texture-art-pattern-29-wallpaper.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 	transform: translateY(-1px);
 	color: #fff;
 }
