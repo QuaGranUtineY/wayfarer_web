@@ -1,0 +1,157 @@
+paths:
+  /buses:
+    post:
+      tags:
+        - admin
+      security:
+      - Bearer: []
+      summary: It creates a bus
+      description: Admin can create a bus
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      parameters:
+      - name: body
+        in: body
+        description: Bus object
+        required: true
+        schema:
+          $ref: '#/definitions/CreateBusReq'
+      responses:
+        201:
+          description: Bus successfully created
+          schema:
+            $ref: '#/definitions/CreateBusRes'
+        400:
+          description: Bad form input values
+          schema:
+            $ref: '#/definitions/errorDef'
+        401:
+          description: User login required
+          schema:
+            $ref: '#/definitions/errorDef'
+        403:
+          description: User is forbidden from accessing admin area
+          schema:
+            $ref: '#/definitions/errorDef'
+        409:
+          description: Bus plate number has already been added by another bus
+          schema:
+            $ref: '#/definitions/errorDef'
+        500:
+          description: Server error
+          schema:
+            $ref: '#/definitions/errorDef'
+    get:
+      tags:
+        - user
+      security:
+      - Bearer: []
+      summary: It gets all buses
+      description: Users and admin can view buses.
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      responses:
+        200:
+          description: Buses successfully fetched
+          schema:
+            $ref: '#/definitions/GetBusesRes'
+        401:
+          description: User login required
+          schema:
+            $ref: '#/definitions/errorDef'
+        500:
+          description: Server error
+          schema:
+            $ref: '#/definitions/errorDef'
+definitions:
+  CreateBusReq:
+    type: object
+    properties:
+      number_plate:
+        type: string
+        pattern: ^[A-Za-z]{3}-[0-9]{3}-[A-Za-z]{2}$
+      manufacturer:
+        type: string
+      model:
+        type: string  
+      year:
+        type: integer
+        format: int32
+        minimum: 1970
+      capacity:
+        type: integer
+        format: int32
+        minimum: 1
+        maximum: 400
+  CreateBusRes:
+    type: object
+    properties:
+      status:
+        type: string
+      data:
+        type: object
+        properties:
+          id:
+            type: integer
+            format: int64
+          number_plate:
+            type: string
+            pattern: ^[A-Za-z]{3}-[0-9]{3}-[A-Za-z]{2}$
+          manufacturer:
+            type: string
+          model:
+            type: string  
+          year:
+            type: integer
+            format: int32
+          capacity:
+            type: integer
+            format: int32
+            minimum: 1
+            maximum: 400
+          created_on:
+            type: string
+            format: date-time  
+  GetBusesRes:
+    type: object
+    properties:
+      status:
+        type: string
+      data:
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              type: integer
+              format: int64
+            number_plate:
+              type: string
+              pattern: ^[A-Za-z]{3}-[0-9]{3}-[A-Za-z]{2}$
+            manufacturer:
+              type: string
+            model:
+              type: string  
+            year:
+              type: integer
+              format: int32
+              minimum: 1970
+            capacity:
+              type: integer
+              format: int32
+              minimum: 1
+              maximum: 400
+            created_on:
+              type: string
+              format: date-time   
+  errorDef:
+    type: object
+    properties:
+      status:
+        type: string
+      error:
+        type: string
